@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            margin: 50px;
+            min-height: 200px;
+            border: 1px solid #000;
+        }
+
+        div {
+            border: 1px solid #444;
+            padding: 20px;
+        }
+
+        .div1 {
+            border-color: #F00;
+            background-color: rgb(243, 135, 135);
+        }
+
+        .div2 {
+            border-color: #0F0;
+            background-color: rgb(135, 243, 135);
+        }
+
+        .div3 {
+            border-color: #00f;
+            background-color: rgb(135, 135, 243);
+        }
+
+        .div4 {
+            border-color: #Ff0;
+            background-color: rgb(243, 234, 135);
+        }
+
+        .div5 {
+            border-color: #f0f;
+            background-color: rgb(243, 135, 234);
+        }
+
+        .div6 {
+            border-color: #0ff;
+            background-color: rgb(135, 234, 234);
+        }
+
+       
+
+       #grid {
+
+    max-width: 900px;
+    margin: 0 auto; 
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    
+    
+    
+
+        }
+        
+#grid .div1{
+    grid-column: 1 / span 6;
+    
+  
+}
+
+
+#grid  .div2{
+    grid-column: span 1;
+    margin-bottom: 65px;
+  
+}
+#grid  .div3{
+    grid-column: span 1;
+    height: 83px;
+
+   
+    
+  
+}
+#grid  .div4{
+    grid-column: span 1 ;
+    height: 83px;
+    
+  
+}
+
+#grid  .div5{
+    grid-column: 4 / 6;
+    justify-items: end;
+    align-self: flex-end;
+    
+   
+   
+   
+    
+  
+}
+
+#grid  .div6{
+    grid-column: 1 / span 6 ;
+   
+    
+  
+}
+    
+      
+
+
+
+
+
+
+#flex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+#flex div{
+  
+  width: 4px;
+  margin: 0;
+  height: 4px;
+  
+  text-align: center;
+
+  
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>GRID</h1>
+    <section id="grid">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+    </section>
+
+    <h1>FLEX</h1>
+    <section id="flex">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+    </section>
+
+</body>
+
+</html>
